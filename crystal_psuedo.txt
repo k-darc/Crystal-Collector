@@ -1,0 +1,7 @@
+	*** CRYSTAL GAME ***
+- Variables for each crystal (name & value). Rando num between 19 - 120.
+
+- Display random number (constrict it between 19 - 100).
+- on click, crystal adds value to a separate box.
+- if revolving number is greater than random number, display lose text/clear random number/clear revolving number.
+- if revolving number is equal to random number, display win text/clear random number/clear revolving number.

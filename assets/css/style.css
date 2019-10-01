@@ -1,0 +1,62 @@
+body {
+    background: url('https://i.pinimg.com/originals/93/c7/af/93c7af107b901deac4a3939563a24c92.jpg');
+}
+
+h1 {
+    font-weight:bold;
+    font-size: 30px;
+    background-color: rgb(197, 187, 140);
+    display:inline;
+    padding:4px;
+    margin:10px;
+}
+
+.txt-instructions {
+    padding: 4px 8px 8px 8px;
+    background-color: beige;
+    margin:10px;
+    height:260px;
+    width:640px;
+}
+
+.random-number {
+    background-color:rgb(44, 150, 44);
+    margin:10px;
+    padding:10px;
+    height:48px;
+    width: 400px;
+    text-align:center;
+}
+
+.counters {
+    padding:10px;
+    background-color: rgb(55, 150, 150);
+    margin:10px;
+    height:100px;
+    width:200px;
+}
+
+.crystal-array {
+    margin:6px;
+    padding:6px;
+}
+
+.crystal-array img{
+    height:100px;
+    width:100px;
+}
+
+.txt-your-total-score {
+    background-color: cyan;
+    margin:10px;
+    padding:8px 100px 8px 8px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+.revolving-total {
+    background-color: white;
+    font-weight:bold;
+    margin:10px;
+    padding:10px;
+}
