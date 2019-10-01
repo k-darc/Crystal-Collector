@@ -12,6 +12,7 @@
         </head>
         
         <body>
+            
         
         <h1>CrystalsCollector</h1>
         <div></div>
@@ -25,26 +26,35 @@
         </div>
         <div></div>
         
-        <p class="random-number"></p>
+        <p id="random-number"></p>
         
         <div class="counters">
             <p class="win-counter">Wins: </p>
             <p class="loss-counter">Losses: </p>
         </div>
         
-        <div class="crystal-array">
-            <img src="assets/images/crystal1.jpg">
-            <img src="assets/images/crystal2.jpg">
-            <img src="assets/images/crystal3.jpg">
-            <img src="assets/images/crystal4.png">
+        <div id="crystal-array">
+            <div class="crystal-image">
+                    <img src="https://i.dlpng.com/static/png/4418801-quartz-crystal-transparent-image-png-arts-quartz-png-400_250_preview.png">
+            </div>
+            <div class="crystal-image">
+                    <img src="https://i.pinimg.com/originals/7a/1e/8c/7a1e8cbae81363b96096b4c5d0971705.png">
+            </div>
+            <div class="crystal-image">
+                    <img src="https://i.dlpng.com/static/png/358551_thumb.png">
+            </div>
+            <div class="crystal-image">
+                    <img src="https://www.stickpng.com/assets/images/58c5828a09e8bc1b42c7794b.png">
+            </div>
         </div>
         
         <div class="txt-your-total-score">
             <p>You total score is: </p>
-            <p class="revolving-total"></p>
         </div>
-        
-        <script type="text/javascript"></script>
+        <div id="revolving-total"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+        <script src="assets/javascript/game.js"></script>
     
 </body>
 </html>
