@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
         <link rel="stylesheet" href="assets/css/style.css">
-
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Source+Sans+Pro&display=swap" rel="stylesheet">
         <title>Title</title>
         </head>
-        
-        <body>
-            
-        
-        <h1>CrystalsCollector</h1>
-        <div></div>
+
+        <body> 
+        <audio id="sound-win" src="snd-win.mp3" preload="auto"></audio>
+        <audio id="sound-lose" src="snd-lose.mp3" preload="auto"></audio>
+        <h1>Crystal Collector</h1>
         
         <div class="txt-instructions">
             <p>You will be given a random number at the start of the game.</p>
@@ -24,21 +22,15 @@
             <p>The value of each crystal is hidden from you until you click on it.</p>
             <p>Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
-        <div></div>
-        
-        <p id="random-number"></p>
-        
+
         <div class="counters">
             <p class="win-counter">Wins: <span id="winC"></span></p>
             <p class="loss-counter">Losses: <span id="lossC"></span></p>
         </div>
         
+        <p id="random-number"></p>
         <div id="crystal-array"></div>
-        
-        <div class="txt-your-total-score">
-            <p>You total score is: </p>
-        </div>
-        <div id="revolving-total"><span id="revolve"></span></div>
+        <div id="revolving-total">Your total so far is:   <span id="revolve"></span></div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
         <script src="assets/javascript/game.js"></script>

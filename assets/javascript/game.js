@@ -2,8 +2,12 @@
   var winTotal = 0
   var lossTotal = 0;
 
-  var targetTotal = 55;
+  var targetTotal = getRandomInt(19, 120);
   var counter = 0;
+
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
   /* -------------------- Random Number Generator */
   function getNumber() {
@@ -11,10 +15,10 @@
       var maxNumber = 121; // The maximum number you want
 
       var randomnumber = (Math.floor(Math.random() * (maxNumber - minNumber)) + minNumber);
-      $('#random-number').html(randomnumber); // Sets content of <div> to number
+      $('#random-number').html(targetTotal); // Sets content of <div> to number
       $("#winC").html(winTotal);
       $("#lossC").html(lossTotal);
-      console.log(randomnumber);
+      console.log(targetTotal);
       return false; // Returns false just to tidy everything up
   }
   getNumber();
@@ -45,18 +49,24 @@
     console.log("Your total is " + counter); 
     $("#revolve").html(counter);
 
-    if (counter === targetTotal) {
-      alert("YOU WIN");
+    if (counter === targetTotal) { 
+      document.getElementById('sound-win').play();
+      alert("YOU WIN !!");
+      console.log("WIN");
       $("#revolve").html("");
       counter = 0;
       winTotal++;
+      targetTotal = getRandomInt(19, 120);
       getNumber();
     }
     else if (counter >= targetTotal) {
-      alert("You lose !");
+      document.getElementById('sound-lose').play();
+      alert("You lose !!");
+      console.log("LOSE");
       $("#revolve").html("");
       counter = 0;
       lossTotal++;
+      targetTotal = getRandomInt(19, 120);
       getNumber();
 
 
