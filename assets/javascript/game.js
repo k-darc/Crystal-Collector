@@ -19,9 +19,9 @@
   }
   getNumber();
 
-  /*$("#random-number").text(targetTotal);*/
+  /*$("#random-number").text(targetTotal); ... don't, just don't do this */
 
-  var numberOptions = [10, 5, 3, 7];
+  var numberOptions = [10, 5, 3, 7]; /*these HAVE to be random 3-10 */
 
   for (var i = 0; i < numberOptions.length; i++) {
     var imageCrystal = $("<img>");
@@ -42,24 +42,26 @@
 
     counter += crystalValue;
 
-    console.log("Your total is " + counter); /*add this to "your total score is" which is the id .revolve*/
+    console.log("Your total is " + counter); 
     $("#revolve").html(counter);
 
     if (counter === targetTotal) {
       alert("YOU WIN");
+      $("#revolve").html("");
       counter = 0;
       winTotal++;
       getNumber();
     }
     else if (counter >= targetTotal) {
       alert("You lose !");
+      $("#revolve").html("");
       counter = 0;
       lossTotal++;
       getNumber();
 
+
     }
-  }); /*clear revolving total at the end of the game*/
-/* crystal values have to become random*/
+  }); 
 
 
 
