@@ -18,29 +18,11 @@
       $("#winC").html(winTotal);
       $("#lossC").html(lossTotal);
       console.log(targetTotal);
-      return false; // Returns false just to tidy everything up
+      return false; // Returns false
   }
   getNumber();
 
-  /*$("#random-number").text(targetTotal); ... don't, just don't do this */
-
-  var numberOptions = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]; /*these HAVE to be random 3-10 */
-/*
-  for (var i = 0; i < numberOptions.length; i++) {
-    var imageCrystal = $("<img>");
-
-    Math.floor(Math.random() * numberOptions.length);
-
-    imageCrystal.addClass("crystal-image");
-
-    imageCrystal.attr("src", "assets/images/img-cry1.png"); 
-
-    imageCrystal.attr("data-crystalvalue", numberOptions[i]);
-
-    $("#crystal-array").append(imageCrystal);
-
-    chooseRandom(imageCrystal, numberOptions[i]);
-  }*/
+  var numberOptions = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]; 
 
 /* -------------------------- random func  ---------*/
 chooseRando("assets/images/img-cry1.png");
@@ -72,7 +54,7 @@ chooseRando("assets/images/img-cry4.png");
     $("#revolve").html(counter);
 
     if (counter === targetTotal) { 
-      document.getElementById('sound-win').play(); /* counter doesn't display the winning or losing number before failing*/
+      document.getElementById('sound-win').play();
       alert("YOU WIN !!");
       console.log("WIN");
       $("#revolve").html("");
@@ -90,7 +72,6 @@ chooseRando("assets/images/img-cry4.png");
       lossTotal++;
       targetTotal = getRandomInt(19, 120);
       getNumber();
-
 
     }
   }); 

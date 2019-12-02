@@ -8,71 +8,73 @@ h1 {
     margin: auto;
     width: 33.33%;
     padding: 2px;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 30px;
-    background-color:rgba(129, 118, 108, 0.815);
-    text-align:center;
+    background-color: rgba(129, 118, 108, 0.815);
+    text-align: center;
     border: 1px solid grey;
-    color:white;
-    font-size:34px;
+    color: white;
+    font-size: 34px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 .txt-instructions {
     padding: 0px 0px 8px 4px;
     background-color: rgba(245, 245, 220, 0.582);
-    margin:10px;
-    height:226px;
-    width:652px;
+    margin: 10px;
+    height: 226px;
+    width: 652px;
     border: 1px solid grey;
     font-size: 16.2px;
-    font-weight:bold;
+    font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
 
 #random-number {
-    background-color:rgba(67, 160, 67, 0.774);
-    color:white;
-    margin:12px 8px 4px 8px;
-    display:inline-block;
-    width:23.2%;
-    text-align:center;
-    font-weight:bold;
-    font-size:40px;
+    background-color: rgba(67, 160, 67, 0.774);
+    color: white;
+    margin: 12px 8px 4px 8px;
+    display: inline-block;
+    width: 23.2%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
     font-family: 'Roboto', sans-serif;
     border: 1px solid grey;
 }
 
 .counters {
     background-color: rgba(81, 128, 120, 0.856);
-    margin:9px 9px 9px 9px;
-    padding:2px;
-    width:22.9%;
-    color:white;
-    font-size:20px;
+    margin: 9px 9px 9px 9px;
+    padding: 2px;
+    width: 22.9%;
+    color: white;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     border: 1px solid grey;
 }
 
 #crystal-array {
-    margin:2px;
-    padding:2px;
+    margin: 2px;
+    padding: 2px;
 }
 
-#crystal-array img{
-    height:80px;
-    width:80px;
-    border-style:outset;
+#crystal-array img {
+    height: 80px;
+    width: 80px;
+    border-style: outset;
     margin: 0px 3px 0px 3px;
 }
 
 #revolving-total {
     background-color: rgba(255, 255, 255, 0.541);
-    font-weight:bold;
+    font-weight: bold;
     font-size: 20px;
     margin: 0px 3px 0px 6.5px;
-    padding:10px;
+    padding: 10px;
     width: 22.2%;
     font-family: 'Roboto', sans-serif;
     border: 1px solid grey;
-};
+}
+
+;
